@@ -13,6 +13,7 @@
 		9DD9D2A61EE0516300F3046B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DD9D2A41EE0516300F3046B /* Main.storyboard */; };
 		9DD9D2A81EE0516300F3046B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DD9D2A71EE0516300F3046B /* Assets.xcassets */; };
 		9DD9D2AB1EE0516300F3046B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DD9D2A91EE0516300F3046B /* LaunchScreen.storyboard */; };
+		9DD9D2B51EE051A600F3046B /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD9D2B41EE051A600F3046B /* UIColor+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		9DD9D2A71EE0516300F3046B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DD9D2AA1EE0516300F3046B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DD9D2AC1EE0516300F3046B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DD9D2B31EE051A600F3046B /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		9DD9D2B41EE051A600F3046B /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +61,11 @@
 		9DD9D29A1EE0516300F3046B /* UIColorHexa */ = {
 			isa = PBXGroup;
 			children = (
-				9DD9D29E1EE0516300F3046B /* AppDelegate.h */,
-				9DD9D29F1EE0516300F3046B /* AppDelegate.m */,
-				9DD9D2A11EE0516300F3046B /* ViewController.h */,
-				9DD9D2A21EE0516300F3046B /* ViewController.m */,
-				9DD9D2A41EE0516300F3046B /* Main.storyboard */,
+				9DD9D2B21EE0518B00F3046B /* Categories */,
+				9DD9D2B81EE0527700F3046B /* Controllers */,
+				9DD9D2B71EE0526300F3046B /* User Interface */,
+				9DD9D2B61EE0524B00F3046B /* Root */,
 				9DD9D2A71EE0516300F3046B /* Assets.xcassets */,
-				9DD9D2A91EE0516300F3046B /* LaunchScreen.storyboard */,
-				9DD9D2AC1EE0516300F3046B /* Info.plist */,
 				9DD9D29B1EE0516300F3046B /* Supporting Files */,
 			);
 			path = UIColorHexa;
@@ -74,9 +74,46 @@
 		9DD9D29B1EE0516300F3046B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9DD9D2AC1EE0516300F3046B /* Info.plist */,
 				9DD9D29C1EE0516300F3046B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9DD9D2B21EE0518B00F3046B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9DD9D2B31EE051A600F3046B /* UIColor+Extension.h */,
+				9DD9D2B41EE051A600F3046B /* UIColor+Extension.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		9DD9D2B61EE0524B00F3046B /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				9DD9D29E1EE0516300F3046B /* AppDelegate.h */,
+				9DD9D29F1EE0516300F3046B /* AppDelegate.m */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		9DD9D2B71EE0526300F3046B /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				9DD9D2A41EE0516300F3046B /* Main.storyboard */,
+				9DD9D2A91EE0516300F3046B /* LaunchScreen.storyboard */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		9DD9D2B81EE0527700F3046B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9DD9D2A11EE0516300F3046B /* ViewController.h */,
+				9DD9D2A21EE0516300F3046B /* ViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +190,7 @@
 				9DD9D2A31EE0516300F3046B /* ViewController.m in Sources */,
 				9DD9D2A01EE0516300F3046B /* AppDelegate.m in Sources */,
 				9DD9D29D1EE0516300F3046B /* main.m in Sources */,
+				9DD9D2B51EE051A600F3046B /* UIColor+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +310,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UIColorHexa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MAS.UIColorHexa;
@@ -283,6 +322,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UIColorHexa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MAS.UIColorHexa;

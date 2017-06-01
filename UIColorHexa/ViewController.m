@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIColor+Extension.h"
 
 @interface ViewController ()
 
@@ -14,16 +15,21 @@
 
 @implementation ViewController
 
+
+#pragma mark - View Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor = [self applicationColorWithHexa:@"#B66775"];
+    
+    
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - Helpers
+-(UIColor *) applicationColorWithHexa:(NSString *)hex{
+    return [UIColor colorWithHexString:hex];
+    
+    
 }
-
 
 @end
